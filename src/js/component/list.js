@@ -7,7 +7,9 @@ const AllList = () => {
 		<div className="container">
             <h1>todos</h1>
 			<ul>
-                <li><input type="text" onChange={(element)=> setInputValue(element.target.value)} value={inputValue} onKeyDown={(item)=> item.} placeholder="No hay tareas, añadir tareas"></input></li>
+                <li><input type="text" placeholder="No hay tareas, añadir tareas" onChange={(element)=> setInputValue(element.target.value)} value={inputValue} onKeyDown={(item)=> {if(item.key === "Enter"){
+                                setList(list.concat([inputValue]));
+                                setInputValue(""); }} ></input></li>
                 <li>hola<i class="fa-solid fa-x"></i></li>
 
             </ul>
