@@ -13,14 +13,14 @@ ul {
     margin-bottom: 0;
 }
 ul li {
-    background-color: grey;
-    border: 1px solid grey;
+    background-color: rgb(197, 195, 195);
+    border: 1px solid  rgb(197, 195, 195);
     list-style: none;
     padding: 5px;
 }
 
 input {
-    background-color: grey;
+    background-color: gainsboro;
     color:white;
     width: 100%;
 }
